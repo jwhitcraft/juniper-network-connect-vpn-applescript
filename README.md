@@ -2,10 +2,9 @@
 
 ![Screenshot](http://seanfisk.github.io/juniper-network-connect-vpn-applescript/screenshot.png)
 
-This is a script that will assist you in automating your VPN connection using Network Connect by [Juniper Networks][juniper]. It was designed for VPN access at [Grand Valley State University][gvsu], but contains nothing GVSU-specific. It should work for all versions of Network Connect on Mac OS X 10.6+, but it has been tested on GVSU's student VPN with Mac OS 10.6 Snow Leopard, Network Connect version 7.1.10 (21187).
+This is a script that will assist you in automating your VPN connection using Network Connect by [Juniper Networks][juniper].
 
 [juniper]: http://www.juniper.net
-[gvsu]: http://gvsu.edu/
 
 ## Recommended Installation
 
@@ -62,25 +61,6 @@ Those who are security-minded may not like embedding their password directly int
       read -s 'password?VPN Password: '
       juniper my.gateway.example.com myusername "$password" &
     }
-
-## GVSU
-
-As mentioned, this was created for use with GVSU's VPN. If you are a GVSU user, please use the following sample command-lines:
-
-### Student
-
-    juniper vpn.student.gvsu.edu studentusername studentpassword
-
-See more about connecting in the [GVSU VPN guide for students][vpn-student].
-
-### Faculty
-
-    juniper vpn.gvsu.edu facultyusername facultypassword
-
-See more about connecting in the [GVSU VPN guide for faculty][vpn-faculty].
-
-[vpn-student]: http://www.gvsu.edu/cms3/assets/428A2C9A-0FB7-5B0C-BBFCF723C12E59E3/VPN-AccessforGVSUStudents.pdf
-[vpn-faculty]: http://www.gvsu.edu/cms3/assets/FCC6FA7C-C5D2-3528-127B6819D54A9210/pdfs/network/vpn_connection_gvsu_machine.pdf
 
 ## But I use Windows or GNU/Linux!
 
