@@ -21,7 +21,7 @@ Reload your shell (assuming bash) so these modifications take effect:
 
 Next, download the script:
 
-    curl https://raw.github.com/seanfisk/juniper-network-connect-vpn-applescript/master/juniper.applescript > ~/bin/juniper
+    curl https://raw.github.com/jwhitcraft/juniper-network-connect-vpn-applescript/master/juniper.applescript > ~/bin/juniper
 
 Make it executable:
 
